@@ -1,0 +1,44 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: beige;
+}
+
+h1, footer
+{
+    text-align: center;
+}
+
+article
+{
+    width: 90%;
+    margin: auto;
+}
+
+#tartalom
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+}
+
+.elem
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: burlywood;
+}
+
+@media screen and (max-width: 800px) 
+{
+    #tartalom
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
